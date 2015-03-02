@@ -10,7 +10,7 @@ layout: nil
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>https://imisslovelove.github.io/cn/</id>
   <author>
-    <name>HoungKing Hsi</name>
+    <name>Houngking Hsi</name>
     <email>imisslovelove@live.com</email>
   </author>
 
@@ -21,7 +21,7 @@ layout: nil
     <title>{{ post.title | xml_escape }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>HoungKing Hsi</name>
+      <name>Houngking Hsi</name>
       <uri>https://imisslovelove.github.io/cn/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
