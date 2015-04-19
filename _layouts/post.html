@@ -2,8 +2,9 @@
 layout: default
 ---
 
-
+{% if page.logo %}
 <div class="post-logo"><img src="{{ page.logo }}"/></div>
+{% endif %}
 <div class="post-title">{{ page.title }}</div>
 
 <div class="post-title-desc">
@@ -35,7 +36,7 @@ layout: default
 <section class="meta">
     <div align="right">
 <span class="author">
-  <a href="https://imisslovelove.github.io">{{ site.author }}</a>
+  <a href="https://indeex.ml">{{ site.author }}</a>
 </span>
     </div>
     <div align="right">

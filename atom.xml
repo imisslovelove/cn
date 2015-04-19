@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-  <title>imisslovelove.github.io</title>
+  <title>indeex.ml</title>
   <link href="https://imisslovelove.github.io/cn/"/>
   <link type="application/atom+xml" rel="self" href="https://imisslovelove.github.io/cn/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
