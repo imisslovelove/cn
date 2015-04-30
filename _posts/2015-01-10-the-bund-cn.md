@@ -98,8 +98,8 @@ tags:
 ![](http://i1154.photobucket.com/albums/p531/luolinjia/blog%20images/the%20bund/mine1_zps14ef2656.jpg)  
 ![](http://i1154.photobucket.com/albums/p531/luolinjia/blog%20images/the%20bund/mine2_zpsb389898c.jpg)  
 
-这两张张是本人于2011.12月份照的。当时我还身在上海。  
+于2009.12月。上海。  
 
 ![](http://i1154.photobucket.com/albums/p531/luolinjia/blog%20images/the%20bund/mine3_zps3c007cd0.jpg)  
 
-这一张是2013.10月份照的。当时在东方明珠抓拍的。  
+于2014.10月。东方明珠。  
