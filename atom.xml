@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
   <title>indeex.ml</title>
-  <link href="https://imisslovelove.github.io/cn/"/>
-  <link type="application/atom+xml" rel="self" href="https://imisslovelove.github.io/cn/atom.xml"/>
+  <link href="http://indeex.org/cn/"/>
+  <link type="application/atom+xml" rel="self" href="https://http://indeex.org/cn/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>https://imisslovelove.github.io/cn/</id>
+  <id>http://indeex.org/cn/</id>
   <author>
     <name>Houngking Hsi</name>
     <email>imisslovelove@live.com</email>
@@ -22,7 +22,7 @@ layout: nil
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>Houngking Hsi</name>
-      <uri>https://imisslovelove.github.io/cn/</uri>
+      <uri>http://indeex.org/cn/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
