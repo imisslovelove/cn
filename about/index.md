@@ -17,4 +17,4 @@ comments: yes
 我定要去瞧瞧。
 
 
-> 如果要订阅本站，请点击[此处](https://imisslovelove.github.io/cn/atom.xml)。
+> 如果要订阅本站，请点击[此处](http://indeex.org/cn/atom.xml)。
