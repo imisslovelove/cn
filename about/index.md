@@ -4,7 +4,7 @@ layout: page
 comments: yes
 ---
 
-# 我是？
+# 关于我？
 
 ![](http://i1154.photobucket.com/albums/p531/luolinjia/blog%20images/snow_zps8811b81c.png)
 
