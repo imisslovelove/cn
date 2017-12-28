@@ -6,7 +6,7 @@ comments: yes
 
 # 关于我？
 
-![](http://i1154.photobucket.com/albums/p531/luolinjia/blog%20images/snow_zps8811b81c.png)
+![](http://hungking.cc/assets/imgs/indeex.org/69b2c9e7490cbda8b015fe2ff24c3d383ffb73658926-W7uTXE.jpeg)
 
 终于，这里再无你的痕迹。
 
