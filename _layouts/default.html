@@ -104,7 +104,7 @@
 		myaudio = document.getElementById('audio');
 		myaudio.src = vList[curr];
 		myaudio.load();
-		myaudio.addEventListener("canplay", function(){
+		myaudio.addEventListener("canplaythrough", function(){
 			if (myaudio.paused) { 
 				myaudio.paused = false;
 				myaudio.play();
