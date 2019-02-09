@@ -100,25 +100,19 @@
 		playMusic();
 	}
 	myaudio.addEventListener("end", playMusic);
-	document.getElementById('btnPlay').onclick = function() {
-		playM();
-	}
 	function playMusic(e) {
 		myaudio = document.getElementById('audio');
 		myaudio.src = vList[curr];
 		myaudio.load();
-		document.getElementById('btnPlay').click();
-		curr = curr + 1;
-		if (curr >= vLen) curr = 0;
-	}
-	function playM(){
 		myaudio.addEventListener("canplay", function(e){
-console.log(e, myaudio)
+			console.log(e, myaudio)
 			if (myaudio.paused) { 
 				myaudio.paused = false;
 				myaudio.play();
 			}
 		});
+		curr = curr + 1;
+		if (curr >= vLen) curr = 0;
 	}
 </script>
 </div>
