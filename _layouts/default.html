@@ -90,6 +90,14 @@
 　　      document.getElementById('btnPlay').value='pause'
 　　    }
 　　}
+	
+	document.addEventListener('WeixinJSBridgeReady', function() {
+		document.getElementById('audio').play();
+	});
+	document.addEventListener('touchstart', function() {
+		document.getElementById('audio').play()
+	});
+	
 // 	var vList = ["https://www.indeex.org/cn/medias/indeex2.mp3","https://www.indeex.org/cn/medias/indeex3.mp3"];
 // 	var vLen = vList.length;
 // 	var curr = 0; 
