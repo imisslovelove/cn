@@ -78,9 +78,6 @@
 <div id="musicbtn" style='display:none'>
 <!-- 	<input id='btnPlay' type="button" onClick="playFn()" value="pause" style="background-color: #008F8B;border: none;border-radius:4px;color:#fff;" /> -->
 <!-- <audio id="audio" preload="auto"> -->
-	<audio id="audio" autoplay src="">
-　　audio fail.
-</audio>
 <script>
 // 　　function playFn(){
 // 　　    var myaudio=document.getElementById('audio');
@@ -118,7 +115,7 @@
 // 	}
 	function playMusic() {
 		ele = '<audio id="audio" autoplay src="' + vList[curr] + '">audio fail.</audio>';
-		document.getElementById('musicbtn').innerHtml = ele;
+		document.getElementById('musicbtn').innerHTML = ele;
 		curr = curr + 1;
 		if (curr >= vLen) curr = 0;
 	}
