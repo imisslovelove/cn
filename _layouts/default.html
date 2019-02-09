@@ -76,41 +76,49 @@
 <!--</script>-->
 <!--</div>-->
 <div id="musicbtn" style='display:none'>
-	<input id='btnPlay' type="button" onClick="playFn()" value="pause" style="background-color: #008F8B;border: none;border-radius:4px;color:#fff;" />
-<audio id="audio" preload="auto">
+<!-- 	<input id='btnPlay' type="button" onClick="playFn()" value="pause" style="background-color: #008F8B;border: none;border-radius:4px;color:#fff;" /> -->
+<!-- <audio id="audio" preload="auto"> -->
+	<audio id="audio" autoplay src="">
 　　audio fail.
 </audio>
 <script>
-　　function playFn(){
-　　    var myaudio=document.getElementById('audio');
-　　    if (document.getElementById('btnPlay').value =="pause") {
-　　      myaudio.pause();
-　　      document.getElementById('btnPlay').value='play'
-　　    }else{
-　　      myaudio.play();
-　　      document.getElementById('btnPlay').value='pause'
-　　    }
-　　}
+// 　　function playFn(){
+// 　　    var myaudio=document.getElementById('audio');
+// 　　    if (document.getElementById('btnPlay').value =="pause") {
+// 　　      myaudio.pause();
+// 　　      document.getElementById('btnPlay').value='play'
+// 　　    }else{
+// 　　      myaudio.play();
+// 　　      document.getElementById('btnPlay').value='pause'
+// 　　    }
+// 　　}
 	
 	var vList = ["https://www.indeex.org/cn/medias/indeex2.mp3","https://www.indeex.org/cn/medias/indeex3.mp3"];
 	var vLen = vList.length;
 	var curr = 0; 
-	var myaudio = document.getElementById('audio');
+	var ele = '<audio id="audio" autoplay src="' + vList[curr] + '">audio fail.</audio>';
+// 	var myaudio = document.getElementById('audio');
 	window.onload= function(){
 		playMusic();
 	}
 	myaudio.addEventListener("end", playMusic);
-	function playMusic(e) {
-		myaudio = document.getElementById('audio');
-		myaudio.src = vList[curr];
-		myaudio.load();
-		myaudio.addEventListener("canplay", function(e){
-			console.log(e, myaudio)
-			if (document.getElementById('audio').paused) { 
-				document.getElementById('audio').paused = false;
-				document.getElementById('audio').play();
-			}
-		});
+// 	function playMusic(e) {
+// 		myaudio = document.getElementById('audio');
+// 		myaudio.src = vList[curr];
+// 		myaudio.load();
+// 		myaudio.addEventListener("canplay", function(e){
+// 			console.log(e, myaudio)
+// 			if (document.getElementById('audio').paused) { 
+// 				document.getElementById('audio').paused = false;
+// 				document.getElementById('audio').play();
+// 			}
+// 		});
+// 		curr = curr + 1;
+// 		if (curr >= vLen) curr = 0;
+// 	}
+	function playMusic() {
+		ele = '<audio id="audio" autoplay src="' + vList[curr] + '">audio fail.</audio>';
+		document.getElementById('musicbtn').innerHtml = ele;
 		curr = curr + 1;
 		if (curr >= vLen) curr = 0;
 	}
