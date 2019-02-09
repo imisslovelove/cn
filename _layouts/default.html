@@ -106,9 +106,9 @@
 		myaudio.load();
 		myaudio.addEventListener("canplay", function(e){
 			console.log(e, myaudio)
-			if (myaudio.paused) { 
-				myaudio.paused = false;
-				myaudio.play();
+			if (document.getElementById('audio').paused) { 
+				document.getElementById('audio').paused = false;
+				document.getElementById('audio').play();
 			}
 		});
 		curr = curr + 1;
