@@ -101,9 +101,9 @@
 	audio.addEventListener("end", playMusic);
 	function playMusic(e) {
 		audio.setAttribute("src",vList[curr]);
-		//audio.load();
+		audio.load();
 		audio.setAttribute("autopaly","autopaly");
-		audio.play();
+		//audio.play();
 		curr = curr + 1;
 		if (curr >= vLen) curr = 0;
 	}
