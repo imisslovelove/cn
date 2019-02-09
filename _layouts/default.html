@@ -95,15 +95,17 @@
 	var vList = ["https://www.indeex.org/cn/medias/indeex2.mp3","https://www.indeex.org/cn/medias/indeex3.mp3"];
 	var vLen = vList.length;
 	var curr = 0; 
+	var audio = document.getElementById('audio');
 	window.onload= function(){
 		playMusic();
 	}
 	audio.addEventListener("end", playMusic);
 	function playMusic(e) {
+		audio = document.getElementById('audio');
 		audio.setAttribute("src",vList[curr]);
 		audio.load();
 		if (audio.paused) { 
-			audio.paused=false;
+			audio.paused = false;
 			audio.play();
 		}
 		curr = curr + 1;
