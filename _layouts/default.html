@@ -99,7 +99,7 @@
 	}
 	audio.addEventListener("end", playMusic);
 	function playMusic(e) {
-		audio.src = vList[curr];
+		audio.setAttribute("src",vList[curr]);
 		audio.play();
 		curr = curr + 1;
 		if (curr >= vLen) curr = 0;
