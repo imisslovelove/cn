@@ -112,7 +112,8 @@
 		if (curr >= vLen) curr = 0;
 	}
 	function playM(){
-		myaudio.addEventListener("canplay", function(){
+		myaudio.addEventListener("canplay", function(e){
+console.log(e, myaudio)
 			if (myaudio.paused) { 
 				myaudio.paused = false;
 				myaudio.play();
