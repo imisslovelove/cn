@@ -14,7 +14,15 @@
 
   </head>
   <body>
-<a class="bshareDiv" href="http://www.bshare.cn/share">Houngking Hsi</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=194e0652-a80d-4f9e-9b75-7c7556299951&style=3&fs=3&textcolor=#127F78&bgcolor=#127F78&bp=facebook,twitter,gplus,weixin,qzone,sinaminiblog,qqim,youdaonote,mqzone,douban&text=分享&lang=en"></script>
+	  
+	  
+<!-- 分享 -->
+<!-- <a class="bshareDiv" href="http://www.bshare.cn/share">Houngking Hsi</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=194e0652-a80d-4f9e-9b75-7c7556299951&style=3&fs=3&textcolor=#127F78&bgcolor=#127F78&bp=facebook,twitter,gplus,weixin,qzone,sinaminiblog,qqim,youdaonote,mqzone,douban&text=分享&lang=en"></script> -->
+	  
+	  
+	  
+	  
+	  
     <!-- wrap start -->
     <div id="wrap">
     	
@@ -68,7 +76,7 @@
 <!--</div>-->
 <div id="musicbtn" style='display:none'>
 	<input id='btnPlay' type="button" onClick="playFn()" value="pause" style="background-color: #008F8B;border: none;border-radius:4px;color:#fff;" />
-<audio id="audio" src="http://www.indeex.org/cn/medias/indeex2.mp3" autoplay="autoplay" loop="true">
+<audio id="audio" src="https://www.indeex.org/cn/medias/indeex2.mp3">
 　　audio fail.
 </audio>
 <script>
@@ -82,6 +90,20 @@
 　　      document.getElementById('btnPlay').value='pause'
 　　    }
 　　}
+	
+	var list = ["https://www.indeex.org/cn/medias/indeex2.mp3","https://www.indeex.org/cn/medias/indeex3.mp3"];
+	var vLen = vList.list;
+	var curr = 0; 
+	window.onload= function(){
+		playMusic();
+	}
+	audio.addEventListener("end", playMusic);
+	function playMusic(e) {
+		audio.src = vList[curr];
+		audio.play();
+		curr = curr + 1;
+		if (curr >= vLen) curr = 0;
+	}
 </script>
 </div>
 	  
