@@ -102,8 +102,8 @@
 	audio.addEventListener("end", playMusic);
 	function playMusic(e) {
 		audio = document.getElementById('audio');
-		audio.setAttribute("src",vList[curr]);
-		audio.load();
+		audio.src = vList[curr];
+		//audio.load();
 		if (audio.paused) { 
 			audio.paused = false;
 			audio.play();
