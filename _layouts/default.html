@@ -103,11 +103,14 @@
 	function playMusic(e) {
 		audio = document.getElementById('audio');
 		audio.src = vList[curr];
-		//audio.load();
-		if (audio.paused) { 
-			audio.paused = false;
-			audio.play();
-		}
+		audio.load();
+		audio.addEventListener("canplay", function(){
+			if (audio.paused) { 
+				audio.paused = false;
+				audio.play();
+			}
+		});
+		
 		curr = curr + 1;
 		if (curr >= vLen) curr = 0;
 	}
