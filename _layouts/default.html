@@ -82,12 +82,12 @@
 </audio>
 <script>
 　　function playFn(){
-　　    var audio=document.getElementById('audio');
+　　    var myaudio=document.getElementById('audio');
 　　    if (document.getElementById('btnPlay').value =="pause") {
-　　      audio.pause();
+　　      myaudio.pause();
 　　      document.getElementById('btnPlay').value='play'
 　　    }else{
-　　      audio.play();
+　　      myaudio.play();
 　　      document.getElementById('btnPlay').value='pause'
 　　    }
 　　}
@@ -95,19 +95,19 @@
 	var vList = ["https://www.indeex.org/cn/medias/indeex2.mp3","https://www.indeex.org/cn/medias/indeex3.mp3"];
 	var vLen = vList.length;
 	var curr = 0; 
-	var audio = document.getElementById('audio');
+	var myaudio = document.getElementById('audio');
 	window.onload= function(){
 		playMusic();
 	}
-	audio.addEventListener("end", playMusic);
+	myaudio.addEventListener("end", playMusic);
 	function playMusic(e) {
-		audio = document.getElementById('audio');
-		audio.src = vList[curr];
-		audio.load();
-		audio.addEventListener("canplay", function(){
-			if (audio.paused) { 
-				audio.paused = false;
-				audio.play();
+		myaudio = document.getElementById('audio');
+		myaudio.src = vList[curr];
+		myaudio.load();
+		myaudio.addEventListener("canplay", function(){
+			if (myaudio.paused) { 
+				myaudio.paused = false;
+				myaudio.play();
 			}
 		});
 		
