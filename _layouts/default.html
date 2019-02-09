@@ -102,8 +102,10 @@
 	function playMusic(e) {
 		audio.setAttribute("src",vList[curr]);
 		audio.load();
-		audio.setAttribute("autopaly","autopaly");
-		//audio.play();
+		//audio.setAttribute("autopaly","autopaly");
+		setTimeout(function() {
+		    audio.play();
+		}, 0);
 		curr = curr + 1;
 		if (curr >= vLen) curr = 0;
 	}
